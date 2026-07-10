@@ -1,8 +1,3 @@
-<div class="menu">
-  <ng-content #name>
-    <app-docs-nav-item></app-docs-nav-item>
-    <app-docs-nav-item></app-docs-nav-item>
-    <app-docs-nav-item></app-docs-nav-item>
-    <app-docs-nav-item></app-docs-nav-item>
-  </ng-content>
+<div class="menu" [class.open]="open()">
+  <ng-content></ng-content>
 </div>

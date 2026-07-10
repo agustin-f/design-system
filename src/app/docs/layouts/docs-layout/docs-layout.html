@@ -1,7 +1,15 @@
-<app-docs-header class="header"></app-docs-header>
+<div class="container">
+  <app-docs-header class="header" (menuClick)="toggleSidebar()"> </app-docs-header>
 
-<app-docs-sidebar class="sidebar"></app-docs-sidebar>
+  <app-docs-sidebar class="sidebar" [open]="sidebarOpen()">
+    <app-docs-nav-item> Foundations </app-docs-nav-item>
 
-<main class="content">
-  <router-outlet></router-outlet>
-</main>
+    <app-docs-nav-item> Components </app-docs-nav-item>
+
+    <app-docs-nav-item> Tokens </app-docs-nav-item>
+  </app-docs-sidebar>
+
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+</div>

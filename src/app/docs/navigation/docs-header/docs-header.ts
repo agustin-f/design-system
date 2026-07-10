@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, output } from '@angular/core';
 
 @Component({
   selector: 'app-docs-header',
@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './docs-header.html',
   styleUrl: './docs-header.css',
 })
-export class DocsHeader {}
+export class DocsHeader {
+  menuClick = output<void>();
+}

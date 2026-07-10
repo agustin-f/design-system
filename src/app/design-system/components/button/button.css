@@ -1,0 +1,14 @@
+.button {
+  background: var(--color-action-primary);
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+
+  cursor: pointer;
+
+  &:hover {
+    background: var(--color-action-primary-hover);
+  }
+}

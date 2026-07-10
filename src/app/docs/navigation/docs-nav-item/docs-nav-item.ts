@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './docs-nav-item.html',
   styleUrl: './docs-nav-item.css',
 })
-export class DocsNavItem {}
+export class DocsNavItem {
+  label = 'item';
+}

@@ -1,0 +1,22 @@
+:root {
+  /* Actions */
+  --color-action-primary: var(--color-primary-500);
+  --color-action-primary-hover: var(--color-primary-600);
+
+  /* Text */
+  --color-text-primary: var(--color-neutral-900);
+
+  /* Background */
+  --color-background-default: #ffffff;
+
+  /* Surface */
+  --color-surface-primary: #ffffff;
+  --color-surface-secondary: #f8fafc;
+
+  /* Border */
+  --color-border-default: #e5e7eb;
+
+  /* Text */
+  --color-text-primary: var(--color-neutral-900);
+  --color-text-secondary: #64748b;
+}

@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { DocsNavItem } from '../docs-nav-item/docs-nav-item';
 
 @Component({
   selector: 'app-docs-sidebar',
-  imports: [DocsNavItem],
+  imports: [],
   templateUrl: './docs-sidebar.html',
   styleUrl: './docs-sidebar.css',
 })
-export class DocsSidebar {}
+export class DocsSidebar {
+  open = input(false);
+}

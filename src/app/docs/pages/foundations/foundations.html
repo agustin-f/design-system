@@ -1,4 +1,17 @@
-<p>foundations works!</p>
-@for (palette of palettes(); track palette.name) {
-  <app-color-row [palette]="palette"> </app-color-row>
-}
+<app-token-group title="Primitive Colors">
+  @for (palette of palettes(); track palette.name) {
+    <app-color-row [palette]="palette"></app-color-row>
+  }
+</app-token-group>
+
+<app-token-group title="Semantic Colors">
+  @for (palette of semanticColors(); track palette.name) {
+    <app-color-row [palette]="palette"></app-color-row>
+  }
+</app-token-group>
+
+<ds-button variant="primary"> Guardar </ds-button>
+
+<ds-button variant="secondary"> Cancelar </ds-button>
+
+<ds-button variant="ghost"> Más información </ds-button>
