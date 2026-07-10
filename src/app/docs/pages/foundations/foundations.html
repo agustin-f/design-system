@@ -1,1 +1,4 @@
 <p>foundations works!</p>
+@for (palette of palettes(); track palette.name) {
+  <app-color-row [palette]="palette"> </app-color-row>
+}

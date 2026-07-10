@@ -1,0 +1,9 @@
+:root {
+  /* Primary */
+  --color-primary-500: #2563eb;
+  --color-primary-600: #1d4ed8;
+
+  /* Neutral */
+  --color-neutral-100: #f5f5f5;
+  --color-neutral-900: #171717;
+}
