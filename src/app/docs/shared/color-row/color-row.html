@@ -4,7 +4,7 @@
   <div class="colors">
     @for (color of palette().colors; track color.token) {
       <div class="color-card">
-        <div class="color-swatch" [style.background-color]="color.value"></div>
+        <div class="color-swatch" [style.background-color]="color.cssVariable"></div>
 
         <div class="color-info">
           <strong>{{ color.name }}</strong>

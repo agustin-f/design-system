@@ -17,18 +17,23 @@
   --color-surface-secondary: var(--color-gray-50);
   --color-surface-tertiary: var(--color-gray-100);
   --color-surface-inverse: var(--color-gray-900);
+  --color-surface-disabled: var(--color-gray-200);
 
   /* =====================================================
      BORDER
   ===================================================== */
 
   --color-border-default: var(--color-gray-200);
-  --color-border-muted: var(--color-gray-100);
+  --color-border-subtle: var(--color-gray-100);
   --color-border-strong: var(--color-gray-400);
+
   --color-border-focus: var(--color-blue-600);
+  --color-border-error: var(--color-red-600);
+  --color-border-success: var(--color-green-600);
+  --color-border-warning: var(--color-orange-600);
 
   /* =====================================================
-     ACTIONS
+     ACTION
   ===================================================== */
 
   --color-action-primary: var(--color-blue-600);
@@ -42,38 +47,63 @@
   --color-action-disabled: var(--color-gray-200);
 
   /* =====================================================
-     FEEDBACK
+     FEEDBACK - SUCCESS
   ===================================================== */
 
-  --color-success: var(--color-green-600);
-  --color-success-background: var(--color-green-50);
-
-  --color-warning: var(--color-orange-600);
-  --color-warning-background: var(--color-orange-50);
-
-  --color-danger: var(--color-red-600);
-  --color-danger-background: var(--color-red-50);
-
-  --color-info: var(--color-blue-600);
-  --color-info-background: var(--color-blue-50);
+  --color-feedback-success: var(--color-green-600);
+  --color-feedback-success-background: var(--color-green-50);
+  --color-feedback-success-border: var(--color-green-200);
+  --color-feedback-success-text: var(--color-green-800);
 
   /* =====================================================
-     LINKS
+     FEEDBACK - WARNING
   ===================================================== */
 
-  --color-link: var(--color-blue-600);
+  --color-feedback-warning: var(--color-orange-600);
+  --color-feedback-warning-background: var(--color-orange-50);
+  --color-feedback-warning-border: var(--color-orange-200);
+  --color-feedback-warning-text: var(--color-orange-800);
+
+  /* =====================================================
+     FEEDBACK - ERROR
+  ===================================================== */
+
+  --color-feedback-error: var(--color-red-600);
+  --color-feedback-error-background: var(--color-red-50);
+  --color-feedback-error-border: var(--color-red-200);
+  --color-feedback-error-text: var(--color-red-800);
+
+  /* =====================================================
+     FEEDBACK - INFO
+  ===================================================== */
+
+  --color-feedback-info: var(--color-blue-600);
+  --color-feedback-info-background: var(--color-blue-50);
+  --color-feedback-info-border: var(--color-blue-200);
+  --color-feedback-info-text: var(--color-blue-800);
+
+  /* =====================================================
+     ICON
+  ===================================================== */
+
+  --color-icon-primary: var(--color-gray-900);
+  --color-icon-secondary: var(--color-gray-600);
+  --color-icon-tertiary: var(--color-gray-500);
+  --color-icon-disabled: var(--color-gray-400);
+  --color-icon-inverse: var(--color-white);
+  --color-icon-brand: var(--color-blue-600);
+
+  /* =====================================================
+     LINK
+  ===================================================== */
+
+  --color-link-default: var(--color-blue-600);
   --color-link-hover: var(--color-blue-700);
-  --color-link-visited: var(--color-blue-800);
-
-  /* =====================================================
-     FOCUS
-  ===================================================== */
-
-  --color-focus-ring: var(--color-blue-500);
+  --color-link-active: var(--color-blue-800);
 
   /* =====================================================
      OVERLAY
   ===================================================== */
 
-  --color-overlay: rgba(0, 0, 0, 0.5);
+  --color-overlay-default: rgba(0, 0, 0, 0.5);
 }
