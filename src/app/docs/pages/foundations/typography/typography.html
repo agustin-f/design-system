@@ -1,0 +1,20 @@
+<section class="typography">
+  @for (item of typography; track item.name) {
+    <article class="type-row">
+      <div class="info">
+        <h3>{{ item.name }}</h3>
+
+        <span> {{ item.size }} / {{ item.lineHeight }} </span>
+      </div>
+
+      <p
+        class="sample"
+        [style.font-size]="item.size"
+        [style.line-height]="item.lineHeight"
+        [style.font-weight]="item.weight"
+      >
+        The quick brown fox jumps over the lazy dog
+      </p>
+    </article>
+  }
+</section>
