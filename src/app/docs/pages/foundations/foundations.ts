@@ -13,7 +13,7 @@ import { Borders } from './borders/borders';
 
 @Component({
   selector: 'app-foundations',
-  imports: [ColorRowComponent, TokenGroup, Button, Typography, Spacing, Radius, Shadows, Borders],
+  imports: [ColorRowComponent, TokenGroup, Typography, Spacing, Radius, Shadows, Borders],
   templateUrl: './foundations.html',
   styleUrl: './foundations.css',
 })

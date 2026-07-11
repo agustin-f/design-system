@@ -1,3 +1,7 @@
-<div class="menu" [class.open]="open()">
-  <ng-content></ng-content>
-</div>
+<aside [class.open]="open()">
+  <nav>
+    @for (item of items; track item.route) {
+      <app-docs-nav-item [label]="item.label" [route]="item.route"> </app-docs-nav-item>
+    }
+  </nav>
+</aside>
