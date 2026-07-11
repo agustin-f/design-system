@@ -1,0 +1,23 @@
+@if (src()) {
+  <img
+    class="avatar"
+    [class.sm]="size() === 'sm'"
+    [class.md]="size() === 'md'"
+    [class.lg]="size() === 'lg'"
+    [src]="src()"
+    [alt]="alt()"
+  />
+} @else {
+  <div
+    class="avatar placeholder"
+    [class.sm]="size() === 'sm'"
+    [class.md]="size() === 'md'"
+    [class.lg]="size() === 'lg'"
+  >
+    @if (displayInitials()) {
+      {{ displayInitials() }}
+    } @else {
+      👤
+    }
+  </div>
+}

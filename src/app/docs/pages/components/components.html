@@ -110,13 +110,51 @@
   </div>
 </app-component-section>
 
-<app-component-section title="Badge" description="Badges highlight status or categories.">
+<app-component-section
+  title="Badge"
+  description="Badges communicate status, categories and metadata."
+>
   <div class="component-section-content">
     <div class="component-example">
-      <h3>Default</h3>
+      <h3>Variants</h3>
 
-      <!-- Próximo componente -->
-      <div>Badge preview</div>
+      <div class="example-row">
+        <ds-badge> Default </ds-badge>
+
+        <ds-badge variant="success"> Success </ds-badge>
+
+        <ds-badge variant="warning"> Warning </ds-badge>
+
+        <ds-badge variant="error"> Error </ds-badge>
+
+        <ds-badge variant="info"> Info </ds-badge>
+      </div>
+    </div>
+  </div>
+</app-component-section>
+
+<app-component-section title="Avatar" description="Avatars represent users or entities.">
+  <div class="component-section-content">
+    <div class="component-example">
+      <h3>Sizes</h3>
+
+      <div class="example-row">
+        <ds-avatar size="sm"></ds-avatar>
+        <ds-avatar size="md"></ds-avatar>
+        <ds-avatar size="lg"></ds-avatar>
+      </div>
+    </div>
+
+    <div class="component-example">
+      <h3>With image</h3>
+
+      <div class="example-row">
+        <ds-avatar src="avatar.jpg"> </ds-avatar>
+        <ds-avatar initials="AJ"></ds-avatar>
+
+        <ds-avatar initials="JP" size="lg"></ds-avatar>
+        <ds-avatar initials="Agustin Jose"></ds-avatar>
+      </div>
     </div>
   </div>
 </app-component-section>
