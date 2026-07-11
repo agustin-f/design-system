@@ -1,3 +1,13 @@
-<button class="button" [disabled]="disabled()" [ngClass]="[variant(), size()]">
-  <ng-content></ng-content>
+<button
+  class="button"
+  [class.loading]="loading()"
+  [disabled]="disabled() || loading()"
+  [ngClass]="[variant(), size()]"
+>
+  @if (loading()) {
+    <span class="spinner"></span>
+    {{ loadingText() ?? 'Cargando...' }}
+  } @else {
+    <ng-content></ng-content>
+  }
 </button>

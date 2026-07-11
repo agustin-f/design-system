@@ -15,4 +15,8 @@ export class Button {
   size = input<ButtonSize>('md');
 
   disabled = input(false);
+
+  loading = input(false);
+
+  loadingText = input<string>();
 }

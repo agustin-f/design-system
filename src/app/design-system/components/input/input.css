@@ -1,0 +1,55 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+input {
+  height: 40px;
+
+  padding: 0 12px;
+
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+
+  font-size: 16px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+input:focus {
+  border-color: #2563eb;
+
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+input.error {
+  border-color: #dc2626;
+}
+
+input:disabled {
+  background: #f3f4f6;
+  color: #9ca3af;
+
+  cursor: not-allowed;
+}
+
+.error-message {
+  font-size: 13px;
+  color: #dc2626;
+}
+
+.helper-text {
+  font-size: 13px;
+  color: #6b7280;
+}

@@ -1,0 +1,19 @@
+<div class="field">
+  @if (label()) {
+    <label>
+      {{ label() }}
+    </label>
+  }
+
+  <input [placeholder]="placeholder()" [disabled]="disabled()" [class.error]="error()" />
+
+  @if (error()) {
+    <span class="error-message">
+      {{ error() }}
+    </span>
+  } @else if (helperText()) {
+    <span class="helper-text">
+      {{ helperText() }}
+    </span>
+  }
+</div>

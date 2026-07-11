@@ -1,0 +1,31 @@
+.component-section-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.component-example {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.component-example h3 {
+  margin: 0;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.example-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.component-section-title {
+  margin: 32px 0 16px;
+
+  font-size: 18px;
+  font-weight: 700;
+}

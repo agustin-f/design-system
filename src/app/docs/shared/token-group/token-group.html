@@ -1,7 +1,3 @@
-<section class="token-group">
-  <h3>{{ title() }}</h3>
-
-  <div class="tokens">
-    <ng-content></ng-content>
-  </div>
-</section>
+<div class="tokens" [class.stack]="layout() === 'stack'">
+  <ng-content></ng-content>
+</div>

@@ -1,13 +1,18 @@
 .token-group {
   margin-bottom: 32px;
+}
 
-  h3 {
-    margin-bottom: 16px;
-  }
+.token-group h3 {
+  margin-bottom: 16px;
 }
 
 .tokens {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+}
+
+.tokens.stack {
+  flex-direction: column;
+  align-items: flex-start;
 }

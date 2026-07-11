@@ -2,11 +2,10 @@
   <app-docs-header class="header" (menuClick)="toggleSidebar()"> </app-docs-header>
 
   <app-docs-sidebar class="sidebar" [open]="sidebarOpen()">
-    <app-docs-nav-item> Foundations </app-docs-nav-item>
+    <app-docs-nav-item label="Foundation" route="/foundations"> </app-docs-nav-item>
 
-    <app-docs-nav-item> Components </app-docs-nav-item>
-
-    <app-docs-nav-item> Tokens </app-docs-nav-item>
+    <app-docs-nav-item label="Components" route="/components"> </app-docs-nav-item>
+    <app-docs-nav-item label="Tokens" route="/tokens"> </app-docs-nav-item>
   </app-docs-sidebar>
 
   <main class="content">

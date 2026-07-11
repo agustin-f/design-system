@@ -1,11 +1,122 @@
-<app-token-group title="Button">
-  <ds-button variant="primary"> Guardar </ds-button>
+<app-component-section
+  title="Button"
+  description="Buttons allow users to perform actions and trigger events."
+>
+  <div class="component-section-content">
+    <div class="component-example">
+      <h3>Primary</h3>
 
-  <ds-button variant="secondary"> Cancelar </ds-button>
+      <ds-button variant="primary"> Guardar </ds-button>
+    </div>
 
-  <ds-button variant="ghost"> Más información </ds-button>
+    <div class="component-example">
+      <h3>Secondary</h3>
 
-  <ds-button variant="danger"> Eliminar </ds-button>
+      <ds-button variant="secondary"> Cancelar </ds-button>
+    </div>
 
-  <ds-button variant="primary" [disabled]="true"> Disabled </ds-button>
-</app-token-group>
+    <div class="component-example">
+      <h3>Ghost</h3>
+
+      <ds-button variant="ghost"> Más información </ds-button>
+    </div>
+
+    <div class="component-example">
+      <h3>Danger</h3>
+
+      <ds-button variant="danger"> Eliminar </ds-button>
+    </div>
+
+    <div class="component-example">
+      <h3>Disabled</h3>
+
+      <ds-button variant="primary" [disabled]="true"> Guardar </ds-button>
+    </div>
+
+    <div class="component-example">
+      <h3>Loading</h3>
+
+      <ds-button variant="primary" [loading]="true" loadingText="Guardando"> </ds-button>
+    </div>
+
+    <div class="component-example">
+      <h3>Sizes</h3>
+
+      <div class="example-row">
+        <ds-button variant="primary" size="sm"> Small </ds-button>
+
+        <ds-button variant="primary" size="md"> Medium </ds-button>
+
+        <ds-button variant="primary" size="lg"> Large </ds-button>
+      </div>
+    </div>
+  </div>
+</app-component-section>
+
+<app-component-section
+  title="Input"
+  description="Inputs allow users to enter and edit information."
+>
+  <div class="component-section-content">
+    <div class="component-example">
+      <h3>Default</h3>
+
+      <ds-input label="Email" placeholder="usuario@email.com"> </ds-input>
+    </div>
+
+    <div class="component-example">
+      <h3>Helper text</h3>
+
+      <ds-input
+        label="Email"
+        placeholder="usuario@email.com"
+        helperText="Nunca compartiremos tu correo"
+      >
+      </ds-input>
+    </div>
+
+    <div class="component-example">
+      <h3>Error</h3>
+
+      <ds-input
+        label="Password"
+        placeholder="Ingrese contraseña"
+        error="La contraseña es requerida"
+      >
+      </ds-input>
+    </div>
+
+    <div class="component-example">
+      <h3>Disabled</h3>
+
+      <ds-input label="Email" placeholder="No disponible" [disabled]="true"> </ds-input>
+    </div>
+  </div>
+</app-component-section>
+
+<app-component-section title="Card" description="Cards group related information and actions.">
+  <div class="component-section-content">
+    <div class="component-example">
+      <h3>Default</h3>
+
+      <ds-card>
+        <h3>Título de Card</h3>
+
+        <p>Descripción del contenido de la tarjeta.</p>
+
+        <ds-button variant="primary"> Ver más </ds-button>
+      </ds-card>
+    </div>
+  </div>
+</app-component-section>
+
+<app-component-section title="Badge" description="Badges highlight status or categories.">
+  <div class="component-section-content">
+    <div class="component-example">
+      <h3>Default</h3>
+
+      <!-- Próximo componente -->
+      <div>Badge preview</div>
+    </div>
+  </div>
+</app-component-section>

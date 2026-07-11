@@ -8,4 +8,5 @@ import { Component, input } from '@angular/core';
 })
 export class TokenGroup {
   title = input.required<string>();
+  layout = input<'grid' | 'stack'>('grid');
 }
