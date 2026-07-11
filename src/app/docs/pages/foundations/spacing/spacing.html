@@ -1,0 +1,13 @@
+<section class="spacing">
+  @for (space of spacing; track space.name) {
+    <div class="spacing-row">
+      <div class="spacing-info">
+        <strong>{{ space.name }}</strong>
+      </div>
+
+      <div class="spacing-value">{{ space.value }}px</div>
+
+      <div class="spacing-preview" [style.width]="space.value + 'px'"></div>
+    </div>
+  }
+</section>
