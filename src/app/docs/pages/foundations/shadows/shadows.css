@@ -1,0 +1,14 @@
+.shadow-row {
+  display: grid;
+  grid-template-columns: 160px 350px 120px;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.shadow-preview {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 8px;
+}

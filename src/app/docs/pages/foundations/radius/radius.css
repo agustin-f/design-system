@@ -1,0 +1,22 @@
+.radius-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 0;
+}
+
+.radius-info {
+  width: 150px;
+}
+
+.radius-value {
+  width: 80px;
+}
+
+.radius-preview {
+  width: 80px;
+  height: 80px;
+  background: #e5e7eb;
+  border: 1px solid #9ca3af;
+  flex-shrink: 0;
+}

@@ -1,0 +1,15 @@
+<section class="shadows">
+  @for (item of shadows; track item.name) {
+    <div class="shadow-row">
+      <div class="shadow-info">
+        <strong>{{ item.name }}</strong>
+      </div>
+
+      <div class="shadow-value">
+        {{ item.value }}
+      </div>
+
+      <div class="shadow-preview" [style.box-shadow]="item.value"></div>
+    </div>
+  }
+</section>

@@ -1,0 +1,15 @@
+.border-row {
+  display: grid;
+  grid-template-columns: 160px 100px 120px;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.border-preview {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-style: solid;
+  border-color: #111827;
+}

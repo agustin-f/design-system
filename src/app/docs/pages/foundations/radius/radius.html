@@ -1,0 +1,15 @@
+<section class="radius">
+  @for (item of radius; track item.name) {
+    <div class="radius-row">
+      <div class="radius-info">
+        <strong>{{ item.name }}</strong>
+      </div>
+
+      <div class="radius-value">
+        {{ item.value }}
+      </div>
+
+      <div class="radius-preview" [style.border-radius]="item.value"></div>
+    </div>
+  }
+</section>

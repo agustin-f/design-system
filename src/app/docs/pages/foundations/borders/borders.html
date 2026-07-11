@@ -1,0 +1,15 @@
+<section class="borders">
+  @for (item of borders; track item.name) {
+    <div class="border-row">
+      <div class="border-info">
+        <strong>{{ item.name }}</strong>
+      </div>
+
+      <div class="border-value">
+        {{ item.value }}
+      </div>
+
+      <div class="border-preview" [style.border-width]="item.value"></div>
+    </div>
+  }
+</section>
