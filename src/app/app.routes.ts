@@ -11,6 +11,11 @@ export const routes: Routes = [
     component: DocsLayout,
     children: [
       {
+        path: '',
+        redirectTo: 'foundations',
+        pathMatch: 'full',
+      },
+      {
         path: 'home',
         component: Home,
       },
