@@ -6,10 +6,11 @@ import { ComponentSection } from '../../shared/component-section/component-secti
 import { Card } from '../../../design-system/components/card/card';
 import { Badge } from '../../../design-system/components/badge/badge';
 import { Avatar } from '../../../design-system/components/avatar/avatar';
+import { Checkbox } from '../../../design-system/components/checkbox/checkbox';
 
 @Component({
   selector: 'app-components',
-  imports: [Button, Input, ComponentSection, Card, Badge, Avatar],
+  imports: [Button, Input, ComponentSection, Card, Badge, Avatar, Checkbox],
   templateUrl: './components.html',
   styleUrl: './components.css',
 })
